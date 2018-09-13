@@ -1,5 +1,3 @@
-const PubSub = require('../helpers/pub_sub.js')
-
 const MunroView = function (pageContainer, munro){
     this.munro = munro;
     this.pageContainer = pageContainer;
@@ -26,7 +24,7 @@ MunroView.prototype.render = function(){
 }
 
 MunroView.prototype.createMunroHeading = function (){
-    const munroHeading = document.createElement('h2');
+    const munroHeading = document.createElement('h3');
     munroHeading.classList.add('munro-name');
     munroHeading.textContent = this.munro.name;
     return munroHeading;
